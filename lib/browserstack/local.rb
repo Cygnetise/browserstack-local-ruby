@@ -85,6 +85,9 @@ class Local
       begin
         line = @process.readline
       rescue EOFError => e
+        puts "XXXXXXXXXXXXXXXX"
+        puts e
+        puts "XXXXXXXXXXXXXXXX"
         sleep 1
         next
       end
